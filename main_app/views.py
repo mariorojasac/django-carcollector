@@ -5,6 +5,6 @@ from django.http import HttpResponse
 
 def home(request):
     return HttpResponse("Hello, world. You're in home")
-    
+
 def about(request):
-    return HttpResponse("this is about page")
+    return render(request, 'about.html')
