@@ -9,3 +9,9 @@ class Car(models.Model):
     milage = models.IntegerField()
     price = models.IntegerField()
 
+    def __str__(self):
+        """
+        add {self.id} next to id of 
+        """
+        return f"Car with an id of : , and model of:{self.model}, and make of: {self.make},"
+
