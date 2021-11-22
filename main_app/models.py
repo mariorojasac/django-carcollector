@@ -11,6 +11,7 @@ class Car(models.Model):
 
     def __str__(self):
         """
+        this overrides the default __str__ method
         add {self.id} next to id of 
         """
         return f"Car with an id of : , and model of:{self.model}, and make of: {self.make},"

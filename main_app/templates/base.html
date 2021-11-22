@@ -18,11 +18,19 @@
       <nav>
         <div class="nav-wrapper">
           <ul>
-            <li><a href="/" class="left brand-logo">Car collector</a></li>
+            <li>
+              <a href="{% url 'home' %}" class="left brand-logo"
+                >Car collector</a
+              >
+            </li>
           </ul>
           <ul>
-            <li><a href="/about" class="right brand-logo">About</a></li>
-            <li><a href="/cars" class="middle brand-logo">My Cars</a></li>
+            <li>
+              <a href="{% url 'about' %}" class="right brand-logo">About</a>
+            </li>
+            <li>
+              <a href="{% url 'index' %}" class="center brand-logo">My Cars</a>
+            </li>
           </ul>
         </div>
       </nav>
